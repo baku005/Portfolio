@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>イラスト - なんかそういうページ</title>
+    <meta name="description" content="なんかいろいろ">
+    <meta name="keywords" content="くろねあ">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <link rel="canonical" href="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- OGP -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- OGP Facebook -->
+    <meta property="fb:app_id" content="">
+
+    <!-- OGP Twitter X -->
+    <meta name="twitter:card" content=""><!-- カードの大きさ -->
+    <meta name="twitter:site" content=""><!-- アカウントid -->
+    <meta name="twitter:creator" content=""><!-- 作成者のTwitterアカウントid -->
+    <meta name="twitter:title" content=""><!-- ページのタイトル -->
+    <meta name="twitter:description" content=""><!-- ページのディスカッションを設定 -->
+    <meta name="twitter:image" content=""><!-- ogp画像の設定 -->
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@217&display=swap" rel="stylesheet">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Import JS/jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        h3 {
+            display: inline-block; /* サイズ調整用 */
+            background-color: #f1d9be; /* 付箋の背景色 */
+            color: #434343; /* 文字色 */
+            padding: 10px 20px; /* 内側の余白 */
+            border-left: 5px solid #fab668; /* 左端のラインでアクセント */
+            border-radius: 3px; /* 角を少し丸める */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 影をつける */
+            position: relative; /* 擬似要素用 */
+        }
+
+        /* 付箋の「折れた部分」を擬似要素で追加 */
+        h3::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            right: 10px; /* 右下部分を折り返し */
+            width: 20px;
+            height: 20px;
+            background-color: #f1d9be; /* 背景と同じ色 */
+            clip-path: polygon(0 0, 100% 0, 0 100%); /* 三角形を作成 */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 折り返し部分にも影を追加 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h2>なんかそういうページ</h2>
+        <p>創作物置き場 by baku</p>
+        <div class="mini-banner">作品集>>イラスト</div>
+    </header>
+    <h3>illustration</h3>
+    
+    
+
+    <main class="main-content">
+        <div class="gallery" id="gallery"></div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <img id="popup-image" src="" alt="ポップアップ画像">
+            <div class="popup-caption" id="popup-caption"></div>
+        </div>
+    </div>
+    <footer>
+        <p>今までに描いたイラストの中で気に入っているものを気まぐれで載せていきます。</p>
+        <p>最終更新日：2024年12月7日</p>
+        <a href="index.html">トップへ</a>
+    </footer>
+    <script src="js/gallery_illust.js"></script>
+</body>
+</html>

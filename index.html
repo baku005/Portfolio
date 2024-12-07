@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>トップ - なんかそういうページ</title>
+    <meta name="description" content="なんかいろいろ">
+    <meta name="keywords" content="くろねあ">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <link rel="canonical" href="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- OGP -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- OGP Facebook -->
+    <meta property="fb:app_id" content="">
+
+    <!-- OGP Twitter X -->
+    <meta name="twitter:card" content=""><!-- カードの大きさ -->
+    <meta name="twitter:site" content=""><!-- アカウントid -->
+    <meta name="twitter:creator" content=""><!-- 作成者のTwitterアカウントid -->
+    <meta name="twitter:title" content=""><!-- ページのタイトル -->
+    <meta name="twitter:description" content=""><!-- ページのディスカッションを設定 -->
+    <meta name="twitter:image" content=""><!-- ogp画像の設定 -->
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@217&display=swap" rel="stylesheet">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Import JS/jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="loader">
+        <p class="txt">
+            welcome
+        </p>
+    </div>
+    <script>
+        $(function () {
+            function end_loader() {
+                $('.loader').fadeOut(800);
+            }
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    end_loader();
+                }, 1000)
+            })
+        })
+    </script>
+
+
+    <header class="header">
+        <h2>なんかそういうページ</h2>
+        <p>創作物置き場 by baku</p>
+        <div class="mini-banner">トップページ</div>
+    </header>
+    <main class="main-content">
+        <section class="hero">
+            <img src="banner.png" alt="Sky Banner" class="hero-image">
+            <h3>ようこそ</h3>
+            <p class="description">
+                こんにちは。当サイトでは私が制作した作品（イラスト、写真、曲など）のコンテンツを掲載しております。趣味で作ったサイトなので、掲載する画像は個人的に気に入ったものとなっております。（お仕事用のポートフォリオサイトは、今後作ろうと思います。）どうぞ、よろしくお願いいたします。
+            </p>
+        </section>
+
+        <aside class="sidebar">
+            <div class="menu">
+                <h2>はじめに</h2>
+                <ul>
+                    <li><a href="0.html">自己紹介</a></li>
+                </ul>
+            </div>
+            <div class="art">
+                <h2>作品集</h2>
+                <ul>
+                    <li><a href="gallery_illust.html">イラスト</a></li>
+                    <li><a href="gallery_photo.html">写真</a></li>
+                    <li><a href="0.html">作曲</a></li>
+                    <li><a href="0.html">その他</a></li>
+                </ul>
+            </div>
+            <div class="daily-content">
+                <h2>リンク</h2>
+                <ul>
+                    <li><a href="0.html">要望・連絡</a></li>
+                    <li><a href="0.html">各SNS</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- Import JS -->
+    <script src="js/script.js">
+
+    </script>
+
+</body>
+
+</html>

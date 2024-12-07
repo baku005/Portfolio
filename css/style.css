@@ -1,0 +1,211 @@
+
+/* styles.css */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+ 
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000eb;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .txt {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 50%;
+    padding-inline: 10%;
+  }
+
+.header {
+    background-color: #4cb8f1;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    padding: 10px 1;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.mini-banner {
+    background-image: linear-gradient(90deg, rgba(253, 219, 146, 1), rgba(209, 253, 254, 1));
+    color: #434343;
+    padding: 5px 0;
+    font-weight:normal;
+    font-family:sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.hero {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nothing-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #434343;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #c5d6f1;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: #434343;
+}
+
+.sidebar .menu, .sidebar .daily-content {
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #007acc;
+}
+
+/* フッターのデザイン */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+/*ギャラリー*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.thumbnail {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* ポップアップ全体 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* ポップアップのコンテンツ */
+.popup-content {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* 画像が枠からはみ出さないようにする */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* パディングを削除（画像が最大化できるようにする） */
+}
+
+/* ポップアップの画像 */
+.popup-content img {
+    width: auto;
+    height: auto;
+    max-width: 90vw; /* 画面幅の90%まで */
+    max-height: 90vh; /* 画面高さの90%まで */
+    object-fit: contain; /* 比率を保持して表示 */
+}
+
+/* キャプション */
+.popup-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+/* 閉じるボタン */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    mix-blend-mode: difference;
+}
+
+.popup-close:hover {
+    color: rgb(226, 4, 4);
+}
